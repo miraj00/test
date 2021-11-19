@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ModalC from "../Modal";
 
+import Skyllar from '../../assets/images/Skyllar.JPG';
 
 const display = {
   flex: {
@@ -22,11 +23,16 @@ function Footer() {
      };
     return (
       <div style={display.flex}>
+       
         <div>
+          <a> <img class="sticky" src={Skyllar} alt="Avatar" /></a>
+          </div> 
+          <div>
           <span> &copy; 2021 Global Trade, Inc.</span>
         </div>
+        
         <div>
-          <a
+            <a
             href="#"
             onClick={() => {
               setIsModalOpen(true);
@@ -55,7 +61,9 @@ function Footer() {
             ></ModalC>
           )}
         </div>
-      </div>
+   </div>
+
+
     );
     }   
 

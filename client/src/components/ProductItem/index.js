@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { pluralize } from "../../utils/helpers"
 
+// import image1 from "./images/alphabet-blocks.jpg"
+
 import { useStoreContext } from '../../utils/GlobalState';
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../../utils/actions';
 
@@ -53,6 +55,8 @@ function ProductItem(item) {
         <img
           alt={name}
           src={`/images/${image}`}
+
+
         />
         <p>{name}</p>
       </Link>
@@ -68,3 +72,6 @@ function ProductItem(item) {
 export default ProductItem;
 
 // client\public\images\alphabet-blocks.jpg
+
+// /images/${image}
+

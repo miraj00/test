@@ -66,10 +66,10 @@ function App() {
         <div>
 
         {/* <Navbar /> */}
-        <SideBar />
+        {/* <SideBar /> */}
     
         <StoreProvider>
-          {/* <Nav /> */}
+          <Nav />
           
           <Switch>
             <Route path="/about" exact component= {About} />

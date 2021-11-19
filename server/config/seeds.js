@@ -4,14 +4,18 @@ const { User, Product, Category } = require('../models');
 db.once('open', async () => {
   await Category.deleteMany();
 
+
   const categories = await Category.insertMany([
-    { name: 'Food' },
-    { name: 'Household Supplies' },
-    { name: 'Electronics' },
-    { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'North America' },
+    { name: 'South America' },
+    { name: 'Europe' },
+    { name: 'Africa' },
+    { name: 'Asia' },
+    { name: 'Australia' },
+    { name: 'Antarctica' }
   ]);
 
+  
   console.log('categories seeded');
 
   await Product.deleteMany();
@@ -123,7 +127,43 @@ db.once('open', async () => {
       image: 'alphabet-blocks.jpg',
       price: 9.99,
       quantity: 600
-    }
+    },
+    {
+      name: 'Teddy Bear',
+      category: categories[5]._id,
+      description:
+        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
+      image: 'teddy-bear.jpg',
+      price: 7.99,
+      quantity: 100
+    },
+    {
+      name: 'Alphabet Blocks',
+      category: categories[5]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'alphabet-blocks.jpg',
+      price: 9.99,
+      quantity: 600
+    },
+    {
+      name: 'Teddy Bear',
+      category: categories[6]._id,
+      description:
+        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
+      image: 'teddy-bear.jpg',
+      price: 7.99,
+      quantity: 100
+    },
+    {
+      name: 'Alphabet Blocks',
+      category: categories[6]._id,
+      description:
+        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
+      image: 'alphabet-blocks.jpg',
+      price: 9.99,
+      quantity: 600
+    },
   ]);
 
   console.log('products seeded');

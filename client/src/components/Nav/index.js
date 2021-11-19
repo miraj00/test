@@ -49,7 +49,7 @@ function Nav() {
 
 
         <Link to="/">
-          <span role="img" aria-label="shopping bag">🛍️</span>
+          <span role="img" aria-label="shopping bag">🌎 </span>
           Global Trade
         </Link>
       </h1>

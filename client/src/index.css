@@ -386,6 +386,7 @@ header a {
   color: var(--light);
 }
 
+
 button {
   font-size: 1rem;
   text-decoration: none;
@@ -394,9 +395,10 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  /* margin: 0 1px; */
+  background-color: rgb(158, 201, 79);
 }
+
 
 button:hover {
   opacity: .8;
@@ -506,4 +508,32 @@ input:focus {
   .card {
     width: 100%;
   }
+}
+
+
+/* client\public\images\bedtime-book.jpg */
+/* skyllar {
+
+  background-image: url("../src/assets/images/Skyllar.JPG");   
+  height: 100px;
+  width: 100%; 
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  display: flex;
+ 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}  */
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 400px;
+  height: 150px;
+  border-radius: 50%;
 }
