@@ -8,6 +8,9 @@ function Nav() {
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
+
+    
+
         <ul className="flex-row">
           <li className="mx-1">
             <Link to="/orderHistory">
@@ -24,18 +27,21 @@ function Nav() {
       );
     } else {
       return (
-        <ul className="flex-row">
+      
+      <ul className="flex-row">
           <li className="mx-1">
             <Link to="/signup">
               Signup
             </Link>
           </li>
+      
           <li className="mx-1">
             <Link to="/login">
               Login
             </Link>
           </li>
-        </ul>
+      </ul>
+      
       );
     }
   }
@@ -43,7 +49,7 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       
-      {/* <SideBar /> */}
+      <SideBar />
 
       <h1>
 

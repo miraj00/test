@@ -85,9 +85,9 @@ export default function SideBar() {
   };
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar position="fixed"  open={open}>
+      <Box sx={{ display: "flex" }}>
+      
+  
         <Toolbar style={display.nav}>
           <IconButton
             color="inherit"
@@ -97,24 +97,17 @@ export default function SideBar() {
             // sx={{ mr: 2, ...(open && { display: "none" }) }}
           >
             {/* <MenuIcon /> */}
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png" alt="sidebar" />
+            <img className="img1" src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png" alt="sidebar" />
           </IconButton>
           {/* <Typography variant="h6" noWrap component="div">
             Persistent drawer
           </Typography> */}
 
-<h1>
 
-
-{/* <Link to="/">
-  <span role="img" aria-label="shopping bag">🛍️</span>
-  Global Trade
-</Link> */}
-</h1>
 
           {/* <NavBar /> */}
         </Toolbar>
-      </AppBar>
+    
       <Drawer
         sx={{
           width: drawerWidth,
@@ -148,5 +141,6 @@ export default function SideBar() {
         <DrawerHeader />
       </Main>
     </Box>
+    
   );
 }
